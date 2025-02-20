@@ -1,14 +1,14 @@
-package com.springboot.demo.controllers;
+package com.common.app.controllers;
 
 
-import com.springboot.demo.Entity.ClientDto;
-import com.springboot.demo.Entity.ClientProjectDto;
-import com.springboot.demo.Entity.People;
-import com.springboot.demo.Repo.ClientProjectRepo;
-import com.springboot.demo.Repo.ClientRepo;
-import com.springboot.demo.Repo.EmployeeRepo;
-import com.springboot.demo.Repo.PeopleRepo;
-import com.springboot.demo.Dto.*;
+import com.common.app.Dto.*;
+import com.common.app.Entity.ClientDto;
+import com.common.app.Entity.ClientProjectDto;
+import com.common.app.Entity.People;
+import com.common.app.Repo.ClientProjectRepo;
+import com.common.app.Repo.ClientRepo;
+import com.common.app.Repo.EmployeeRepo;
+import com.common.app.Repo.PeopleRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

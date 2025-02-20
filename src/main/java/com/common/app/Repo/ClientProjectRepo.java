@@ -1,6 +1,6 @@
-package com.springboot.demo.Repo;
+package com.common.app.Repo;
 
-import com.springboot.demo.Entity.ClientProjectDto;
+import com.common.app.Entity.ClientProjectDto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
