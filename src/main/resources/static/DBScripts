@@ -1,0 +1,51 @@
+----------------- ClientProject Table -----------------
+
+CREATE TABLE ClientProject (
+    clientProjectID INT PRIMARY KEY,
+    Project_Name VARCHAR(255) NOT NULL,
+    startDate DATE NOT NULL,
+    Expected_End_Date DATE NOT NULL,
+    Lead_By_EmpId INT NOT NULL,
+    Completed_Date DATE NULL,
+    Contact_Person VARCHAR(255) NOT NULL,
+    Contact_Person_Contact_No BIGINT NOT NULL,
+    Total_Emp_Working INT NOT NULL,
+    Project_Cost DECIMAL(15,2) NOT NULL,
+    Project_Details VARCHAR(255) NULL,
+    Contact_Person_Email_Id VARCHAR(255) NOT NULL,
+    Client_Id INT NOT NULL,
+    FOREIGN KEY (Client_Id) REFERENCES [dbo].[Client](ID)
+);
+
+CREATE SEQUENCE [dbo].[client_project_seq]
+ AS [bigint]
+ START WITH 1
+ INCREMENT BY 1
+ MINVALUE -9223372036854775808
+ MAXVALUE 9223372036854775807
+ CACHE
+GO
+
+----------------- Employee Table -----------------
+
+CREATE TABLE Employee (
+    empID INT PRIMARY KEY,
+    Employee_Name VARCHAR(255) NOT NULL,
+    Employee_Code VARCHAR(255) NOT NULL,
+    Employee_Email_Id VARCHAR(255) NOT NULL,
+	Employee_Designation VARCHAR(255) NOT NULL,
+	Employee_Role VARCHAR(255) NOT NULL
+);
+
+
+insert into [dbo].[Employee](empID, Employee_Name, Employee_Code, Employee_Email_Id, Employee_Designation, Employee_Role) values(1, 'Vivek','Dev-123', '12334','Senior Developer', 'Admin');
+
+CREATE SEQUENCE [dbo].[employee_seq]
+ AS [bigint]
+ START WITH 4
+ INCREMENT BY 1
+ MINVALUE -9223372036854775808
+ MAXVALUE 9223372036854775807
+ CACHE
+GO
+
