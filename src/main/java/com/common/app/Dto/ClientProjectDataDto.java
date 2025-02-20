@@ -1,6 +1,6 @@
-package com.springboot.demo.Dto;
+package com.common.app.Dto;
 
-import com.springboot.demo.Entity.ClientDto;
+import com.common.app.Entity.ClientProjectDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,8 +12,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ClientDataDto {
+public class ClientProjectDataDto {
 
     String message;
-    List<ClientDto> data;
+    List<ClientProjectDto> data;
 }

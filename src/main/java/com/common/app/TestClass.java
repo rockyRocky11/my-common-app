@@ -1,4 +1,4 @@
-package com.springboot.demo;
+package com.common.app;
 
 import java.util.Arrays;
 import java.util.List;

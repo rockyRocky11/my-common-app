@@ -1,4 +1,4 @@
-package com.springboot.demo.Dto;
+package com.common.app.Dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

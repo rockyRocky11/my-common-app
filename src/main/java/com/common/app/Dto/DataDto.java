@@ -1,4 +1,4 @@
-package com.springboot.demo.Dto;
+package com.common.app.Dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,8 +11,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class DesignationDataDto {
+public class DataDto {
 
     String message;
-    List<DesignationDto> data;
+    List<RolesDto> data;
 }
